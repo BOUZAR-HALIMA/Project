@@ -1,0 +1,40 @@
+/* Text animation  */
+.container{
+    position: relative;
+    top:5rem;
+    text-align: center;
+}
+.animation{
+    z-index: 13;
+    text-transform: uppercase;
+    font-family: 'roboto' , sans-serif;
+    font-size: 2rem;
+    /* Letter-spacing: 1px; */
+    color: #000000;
+    display: inline-block;
+    animation: fadeIn 1.5s forwards ;
+    opacity: 0;
+    transition-timing-function : cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.first{
+    display: inline-block;
+    animation: firstspan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    z-index: 1;
+    position : relative;
+    top:-45px;
+    font-weight: 500;
+}
+
+.slide{   
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.second{   
+    color: #E5CBA4; 
+    font-weight: 900;
+    Z-index: 1;
+    display: inline-block;
+    animation : secondspan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
